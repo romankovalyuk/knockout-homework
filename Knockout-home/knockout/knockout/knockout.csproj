@@ -253,11 +253,16 @@
     <Content Include="bower_components\knockout\src\utils.js" />
     <Content Include="bower_components\knockout\src\version.js" />
     <Content Include="bower_components\knockout\src\virtualElements.js" />
+    <Content Include="bower_components\requirejs-domready\domReady.js" />
+    <Content Include="bower_components\requirejs\require.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\Product.js" />
+    <Content Include="Scripts\ProductsViewModel.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -378,6 +383,13 @@
     <Content Include="bower_components\knockout\LICENSE" />
     <Content Include="bower_components\knockout\package.json" />
     <Content Include="bower_components\knockout\README.md" />
+    <Content Include="bower_components\requirejs\.bower.json" />
+    <Content Include="bower_components\requirejs\bower.json" />
+    <Content Include="bower_components\requirejs\README.md" />
+    <Content Include="bower_components\requirejs-domready\.bower.json" />
+    <Content Include="bower_components\requirejs-domready\LICENSE" />
+    <Content Include="bower_components\requirejs-domready\package.json" />
+    <Content Include="bower_components\requirejs-domready\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
