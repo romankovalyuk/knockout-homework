@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Knockout";
+}
+
+<div id="productView" data-bind="with: selectedProduct">
+    <p>
+        SKU: <span data-bind="text: sku"></span>
+        <input type="text" data-bind="value: sku" />
+    </p>
+    <p>
+        Description: <span data-bind="text: description"></span>
+        <input type="text" data-bind="value: description" />
+    </p>
+    <p>
+        Cost: <span data-bind="text: cost"></span>
+        <input type="text" data-bind="value: cost" />
+    </p>
+    <p>
+        Price: <span data-bind="text: price"></span>
+        <input type="text" data-bind="value: price" />
+    </p>
+    <p>
+        Quantity: <span data-bind="text: quantity"></span>
+        <input type="text" data-bind="value: quantity" />
+    </p>
+</div>
+<div id="buttonContainer">
+    <button type="button" data-bind="click: AddNewProduct, visible: (selectedProduct() ? false : true)">Add</button>
+    <button type="button" data-bind="click: RemoveProduct, visible: (selectedProduct() ? true : false)">Remove</button>
+    <button type="button" data-bind="click: DoneEditingProduct, visible: (selectedProduct() ? true : false)">Done</button>
+</div>
+
+<div id="productListView">
+    <select id="productList" size="10" style="width: 250px;" data-bind="options: productCollection, value: listViewSelectedItem, optionsText: 'sku'"></select>
+</div>
